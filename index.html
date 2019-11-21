@@ -1,0 +1,13 @@
+<!doctype html>
+<title>Fluent compat test</title>
+<h1>Fluent compat test</h1>
+<h2 id="result">Success</h2>
+<script>
+    window.onerror = function(err) {
+        document.getElementById("result").innerHTML = JSON.stringify(err);
+    };
+</script>
+<script>
+    // Bad syntax to test error reporting.
+    let 1 = 1;
+</script>
